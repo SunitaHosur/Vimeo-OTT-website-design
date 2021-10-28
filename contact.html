@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">  
+<script src="./js/script.js"></script>  
+<title>Document</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* body {
+width: 100%;
+background-image: url(./images/—Pngtree—cool\ blue\ textured\ polygon\ rhythm_1086066.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+} */
+/* VARIABLES */
+:root{
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --font-family: sans-serif;
+}
+/* main content */
+.main-content h1{
+    font-family: var(--font-family);
+    color: var(--White);
+    text-align: center;
+}
+.main-content{
+    border-radius: 20px;
+    background: rgb(17, 28, 37);
+    width: 500px;
+    padding-left: 13rem;
+}
+ form{
+     line-height: 20px;
+     color: var(--White);
+}
+label{
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+input, select{
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 3px;
+    outline: 0;
+    padding: 10px;
+}
+.reset, .submit{
+    background-color: #68f7ff!important;
+    color: #0f1a20!important;
+    height: auto!important;
+    padding: 15px 0!important;
+    text-shadow: none!important;
+    transition: .5s background-color!important;
+    border-radius: 6px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+.content-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width:700px){
+  .main-content{
+    padding-left: 0rem;
+    
+}
+}
+</style>
+      <!-- Bootstrap CSS -->
+      <link rel = "stylesheet" 
+      href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity =" sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+         crossorigin = "anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  CustomNav">
+    <a class="navbar-brand" href="index.html">
+        <img src="./images/home/Logo.png" width="170" height="33" alt="">
+      </a>
+    <button class="navbar-toggler Customtoggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse CustomCcollapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active ">
+          <a class="nav-link TxtColor" href="resouces.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link TxtColor" href="pricing.html">Pricing</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link TxtColor" href="#">Why Vimeo OTT?</a>
+        </li>
+      </ul>
+      <a class="nav-link TxtColor" href="contact.html">Contact</a>
+      <a class="nav-link TxtColor" href="login.html">Log In</a>
+      <a class="btn btn-outline-success my-2 my-sm-0 TxtColor navbtn" href="getstarted.html">Get started</a>
+
+    </div>
+  </nav>
+
+<!-- contact section 1 -->
+<section class="contact-section1">
+    <div>
+<h2 class="contact-heading">Connect with our team</h2>
+<p class="contact-desc">Our team is happy to answer your questions about our video tools.<span class="contact-span"> Tell us your needs, and we’ll reach out shortly.</span></p>
+</div>
+<div class="contact-content">
+    <div class="contact-content-heading">
+        <h4 class="contact-sub-heading">A conversation with an expert from Vimeo includes:</h4>
+        <div class="contact-sub">
+          <h4 class="contact-sub-heading">How your business uses video</h4>
+          <p class="contact-sub-desc">We'll cover your video streaming goals and how they align<span class="contact-span"> with our specific OTT product offerings.</span></p>
+        </div>
+        <div class="contact-sub">
+          <h4 class="contact-sub-heading">A Vimeo OTT product overview</h4>
+          <p class="contact-sub-desc">How Vimeo can help you distribute your video content and <span class="contact-span">centralize your customers in one dashboard.</span></p>
+        </div>
+        <div class="contact-sub">
+          <h4 class="contact-sub-heading">Your timeline</h4>
+          <p class="contact-sub-desc">When the best time to launch a new video subscription<span class="contact-span"> service is for your business.</span></p>
+        </div>
+        <div class="contact-sub">
+          <h4 class="contact-sub-heading">Questions?</h4>
+          <div class="contact-que" >
+            <img src="https://v.fastcdn.co/u/f5cf1584/51143363-0-50043630-0-chat-whit.png" width="30px" height="auto" alt="">
+            <p>Sales: +1 646 490 1679</p>
+          </div>
+          <div class="contact-que" >
+            <img src="https://v.fastcdn.co/u/f5cf1584/51143308-0-50001715-0-support-w.png" width="25px" height="auto" alt="">
+           <a href="#">Vimeo Support</a>
+          </div>
+        </div>
+    </div>
+    <div class="contact-form">
+      <div class="main-content">
+        <form name="register" method="post">
+        
+        <input type="text" id="fname" name="firstname" placeholder="First Name" >
+        <br><br>
+        
+        <input type="text" id="lname" name="lname" placeholder="Last Name" >
+        <br><br>
+        <input type="email" id="email" name="email" placeholder="Business Email" >
+        <br><br>
+        <input type="text" id="cname" name="cname"  placeholder="Company Name" >
+        <br><br>
+        <input type="phone" id="phone" name="phone"  placeholder="+91" >
+        <br><br>
+        <input type="number" id="number" name="number"  placeholder="what best describes the genre of your videos?" >
+        <br><br>
+        <input type="number" id="number" name="number"  placeholder="Do you currently have subscription channel" >
+        <br><br>
+        <input type="number" id="number" name="number"  placeholder="How many subscribers do you have ?" >
+        <br><br>
+        <input type="submit" value="Contact our team" class="submit">
+    </div>
+</form>
+
+    </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+  <!-- footer -->
+<footer class="furniture-footer">
+    <!-- section 1 -->
+    <div class="footer-signup">
+        <div class="signup-club">
+            <h2 class="club-maintitle">Our team can’t wait to hear from you.</h2>
+            <p class="club-subtitle"> <img src="https://v.fastcdn.co/u/f5cf1584/50001715-0-support-white.png" width="50" alt=""><span class="phone-no">+1 646 490 1679</span></p>
+        </div>
+        <div class="signup-input">
+            <button class="signup-btn1 ">Create free channel</button><br>
+            <button class="signup-btn2 btn-sale">Contact sales</button><br>
+            <button class="signup-btn2 btn-chat">Chat now</button>
+  
+        </div>
+    </div>
+    <!-- section 2 -->
+    <div class="page-footer">
+        <div class="footer-content">
+          <div  class="footer-contact">
+            <img src="https://v.fastcdn.co/u/f5cf1584/49603630-0-vimeo-white.png" width="170" height="33" alt="">
+          </div>
+            <div class="main-footer-listing">
+            <div class="footer-listig">
+                <div class="footerlisting-1">
+                    <ul>
+                        <li class="li-bold">Vimeo</li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Upload</a></li>
+                        <li><a href="#">Staff Picks</a></li>
+                        <li><a href="#">On Demand</a></li>
+                        <li><a href="#">Vimeo OTT</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+  
+                <div class="footerlisting-2">
+                    <ul>
+                        <li class="li-bold">Solutions</li>
+                        <li><a href="#">Fitness</a></li>
+                        <li><a href="#">Yga</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Faith </a></li>
+                        <li><a href="#">Cultural institution</a></li>
+                        <li><a href="#">Create your channel</a></li>
+                        <li><a href="#">Custom</a></li>
+                        <li><a href="#">Internal comms</a></li>
+                    </ul>
+                </div>
+  
+                <div class="footerlisting-1">
+                    <ul>
+                        <li class="li-bold">Resources</li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">OTT Resources</a></li>
+                        <li><a href="#">Streameo</a></li>
+                        <li><a href="#">Vimeo Master Class</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+  
+                <div class="footerlisting-2">
+                    <ul>
+                        <li class="li-bold">Company</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs DC</a></li>
+                    </ul>
+                </div>
+  
+  
+            </div>
+        </div>
+            
+  
+        </div>
+        
+  
+        <div class="footer-copyright">
+            <div class="copyright">
+                <div class="copyright-main">
+                    <p>© 2021 Vimeo.com, Inc. All rights reserved. Terms, Privacy, copyright, &cookies</p>
+                </div>
+            </div>
+           
+  
+        </div>
+    </div>
+  </footer>
+  
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin = "anonymous">
+  </script>
+  
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin = "anonymous">
+  </script>
+  
+  <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin = "anonymous">
+  </script>
+  </body>
+  </html>

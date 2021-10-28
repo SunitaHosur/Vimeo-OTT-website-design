@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+     <script>
+    function validateForm(){
+    var fn=document.forms["register"]["fullname"].value;
+    var email=document.forms["register"]["email"].value;
+    var ctry=document.forms["register"]["country"];
+    if (fn==null||fn=="") {
+        alert("Full Name Cannot be blank");
+        return false;
+    }
+    else if (email==null||email=="") {
+        alert("Email cannot be blank");
+        return false;
+    }
+    else if (ctry.selectedIndex==0) {
+        alert("Select Your Country");
+        return false;
+    }
+}
+    </script>
+    <style>
+        body{
+            background-color: rgb(228, 242, 247);
+            font-family: Helvetica,Helvetica,Arial,sans-serif;
+        }
+        div{
+            margin: 0px auto;
+            width: 21%;
+            padding: 30px;
+            font-size: 20px;
+            background-color: white;
+            position: absolute;
+             left: 40rem;
+              top: 50%;
+              transform: translateY(-50%);
+        }
+        input[type=text],select
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border:1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+            
+        }
+        input[type=submit]
+        {
+            width: 100%;
+            background-color: rgb(19, 173, 239);
+            color: white;
+            padding: 14px 20px;
+            margin: 20px 0;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        } 
+        input[type=password], select {
+            color: rgb(192, 194, 198);
+    font-size: 1rem;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type=submit]:hover
+        {
+            background-color: rgb(0, 136, 204);
+        }
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        div label
+        {
+            color: #7a90a0;
+            font-weight: 400;
+            font-size: 0.85rem;
+        }
+.forget-pass{
+        color: #00adef!important;
+    font-size: 0.9rem;
+    text-decoration: none;
+    }
+    .login-heading{
+    text-align: center;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #1a2e3b;
+    font-weight: 600;
+}
+.login-account{
+    color: #7a90a0;
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-align: center;
+}
+@media (max-width:700px){
+    div {
+        margin: 0px auto;
+    width: 78%;
+    left: 1rem;
+    top: 10%;
+    transform: translateY(0%);
+}
+}
+
+    </style>
+</head>
+<body>
+    <a class="navbar-brand" href="index.html">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjYgMzA2LjkiPjxwYXRoIGQ9Ik0yMjUuNyA1MS4yYzkuOS4xIDE5LjUtMy43IDI2LjYtMTAuNyA2LjctNi4zIDEwLjEtMTIuOSAxMC40LTE5LjguMy00LjctMS41LTkuMy01LjQtMTMuOC0zLjUtNC40LTguOS02LjktMTQuNS02LjgtOS45IDAtMTkuNiAzLjUtMjcuMiA5LjktOC4yIDYuNi0xMi40IDEzLjUtMTIuNiAyMC42LS43IDEzLjcgNi45IDIwLjYgMjIuNyAyMC42ek04MTMgOTRjLTEwLTEzLTI0LjYtMTkuNS00NC0xOS41LTMwLjEgMC01NS4yIDExLTc1LjEgMzMuMS0xOC41IDE5LjktMjcuMSA0MS43LTI1LjcgNjUuNC4xIDEuOC4yIDMuNS40IDUuMWwtMy4xIDEuM2MtMjMuNSAxMC4xLTQ1LjIgMTUuMi02NS4xIDE1LjItMTAgMC0xNy40LTMuNC0yMi40LTEwLjMgMjYuOC00LjQgNDkuMS0xNC43IDY2LjgtMzEgMTYuNi0xNC45IDI0LjQtMjkuNCAyMy4zLTQzLjUtMS43LTIyLjEtMTYtMzMuMS00My4xLTMzLjEtMjkuMyAwLTU0LjggMTEuMS03Ni4zIDMzLjItMTkuNiAyMC4yLTI5LjYgNDEuNS0yOS45IDYzLjktLjEgMy42LjEgNy4zLjUgMTAuOS00LjcgMy4xLTguMiA0LjYtMTAuNSA0LjYtNS4zIDAtOC42LTEuMS0xMC0zLjNzLTEuOS02LjItMS43LTEyYzAtMi4yIDEuNy0xMC43IDUuMi0yNS40czUuMy0yNiA1LjYtMzMuN2MuNS0xMS4zLTEuNy0yMC02LjYtMjYtNS44LTcuNC0xNS4zLTEwLjYtMjguNi05LjUtMTEuMS44LTIxLjcgNS0zMS45IDEyLjQtNi45IDUuMi0xMy4yIDExLjItMTguNyAxNy44LTIuMiAxLjktNC4zIDMuOC02LjIgNS40LjMtMTEuMy0xLjktMjAtNi42LTI2LjEtNS44LTcuNS0xNS41LTEwLjYtMjktOS41LTE1LjggMS40LTMwIDcuNi00Mi43IDE4LjctNS42IDQuOC0xMC41IDEwLjQtMTQuNSAxNi42LjYtMi42LjgtNS4yLjgtNy45LjItOC0yLjItMTUuOS02LjYtMjIuNi00LjQtNi41LTEwLjItOS41LTE3LjQtOC45LTQuMS4zLTEyIDUuOC0yMy42IDE2LjYtMTYuMSAxNC45LTI0LjggMjMtMjYuMSAyNC4xbDEwIDExLjJjNy43LTUuNiAxMi40LTguNCAxNC4xLTguNCAzIDAgNC4zIDIuNSAzLjcgNy40LS4zIDcuMi0xLjUgMTcuMi0zLjggMzAtMS40IDcuOS0yLjQgMTQuOC0zLjEgMjAuNmwtLjQuM2MtMTAgOC4yLTE2LjkgMTIuMy0yMC43IDEyLjMtOC44IDAtMTMuMS01LjktMTIuOS0xNy44IDQuMS0yNS45IDgtNDcuMiAxMS42LTY0IDEuMS05LjktLjUtMTgtNC44LTI0LjJzLTExLTguOS0yMC4yLTguMWMtNS44LjYtMTQuNyA2LjEtMjYuNiAxNi42TDE4NC43IDEwM2MtLjgtMTkuNi05LjgtMjkuNi0yNi45LTMwLjEtMjUuNi0uOC00Mi45IDEzLjYtNTIgNDMuNCA0LjMtMS45IDktMi45IDEzLjctMyA5LjQgMCAxMy41IDUuMyAxMi40IDE1LjgtLjYgNi40LTQuNyAxNS43LTEyLjQgMjcuOXMtMTMuNiAxOC4zLTE3LjUgMTguM2MtNSAwLTkuNS05LjQtMTMuNy0yOC4yLTEuNC01LjUtMy45LTE5LjYtNy41LTQyLjMtMy4zLTIxLTEyLjItMzAuOS0yNi41LTI5LjUtNi4xLjYtMTUuMiA2LjEtMjcuMyAxNi42LTguOCA4LTE3LjggMTYtMjcgMjQuMWw4LjcgMTEuMmM4LjMtNS44IDEzLjEtOC43IDE0LjUtOC43IDYuMyAwIDEyLjMgOS45IDE3LjggMjkuOEw1NS45IDIwM2M3LjQgMTkuOSAxNi41IDI5LjggMjcuMyAyOS44IDE3LjQgMCAzOC42LTE2LjMgNjMuOC00OSAxNy43LTIyLjcgMjkuMS00MS45IDM0LjQtNTcuNiA3LTUuMSAxMS4yLTcuNyAxMi44LTcuNyA1IDAgNy41IDMuNiA3LjUgMTAuOCAwIDEuNC0yLjcgMTEuNi04LjEgMzAuN3MtOC4yIDMzLjItOC41IDQyLjNjLS4zIDguOSAxLjkgMTYgNi40IDIxLjZzMTEuMSA4LjMgMTkuNyA4LjNjMTguNSAwIDM3LTggNTUuNi0yNCAxLjYtMS40IDMuMi0yLjkgNC44LTQuNCAxLjIgNS43IDMuOCAxMC45IDcuNyAxNS4yIDggOC42IDIxLjUgMTIuNiA0MC40IDEyLTIuNS02LjEtMy41LTE2LjktMy0zMi4zLjgtMTcuMiA1LjQtMzQgMTMuMy00OS40IDgtMTUuOCAxNS41LTIzLjYgMjIuNC0yMy42IDggMCAxMS43IDUuMSAxMS4yIDE1LjMtLjUgOC0xLjggMTUuOS00LjEgMjMuNi0yLjQgOC42LTMuOCAxNy41LTQgMjYuNS0uNiAxNC4xIDIuNiAyNC4yIDkuNSAzMC4zIDcuNyA2LjkgMjEuMiAxMC4xIDQwLjUgOS41LTIuOS02LjQtNC0xNS41LTMuNS0yNy40LjgtMTYuOSA2LjUtMzQuMyAxNy4xLTUyLjMgMTAtMTcuMSAxOC42LTI1LjcgMjUuOC0yNS43IDYuNyAwIDkuOSA1LjMgOS42IDE1LjgtLjMgNi45LTIgMTYuNi01LjIgMjlzLTQuOSAyMy4xLTUuMiAzMS45Yy0uNiAxOS45IDguMSAyOS45IDI2LjEgMjkuOSAxOC41IDAgMzctOCA1NS42LTI0bC45LS44Yy42IDEuMSAxLjMgMi4yIDIgMy4yIDkuNyAxNC45IDI1LjcgMjIuNCA0OC4xIDIyLjQgMzAuMSAwIDU5LjktOC40IDg5LjItMjUuMyAzLjMtMS45IDYuNC0zLjcgOS4zLTUuNSAxLjggMy43IDQgNy4yIDYuNiAxMC40IDExLjMgMTQuMSAyNy45IDIxLjEgNDkuOCAyMS4xIDI2LjMgMCA0OC4zLTkuMiA2Ni0yNy44IDE3LjctMTguNSAyNy4xLTQwLjUgMjguMi02NS45LjgtMTguNy0zLjUtMzQuMS0xMi45LTQ1Ljl6bS0yNDEuNSA3NC42Yy0uMi0zLjYtLjItNS40IDAtNS40LjMtMTAuNCA0LjctMjEuNCAxMy4yLTMyLjhzMTctMTcuMSAyNS4zLTE3LjFjNi40IDAgOS40IDMuNyA5LjEgMTEuMS0uMyA1LjUtNC40IDEyLjctMTIuNCAyMS41LTkuOSAxMC4xLTIxLjkgMTcuOS0zNS4yIDIyLjd6TTc3OSAxMzguNGMtLjYgMTMuNi00LjggMjYuNy0xMiAzOC4yLTguOCAxNC43LTE5LjUgMjItMzEuOSAyMi01LjUgMC05LjgtMy0xMi45LTkuMS0yLjgtNS43LTQuMS0xMi0zLjctMTguMy42LTE0LjIgNC45LTI3LjkgMTIuNS0zOS45IDkuMS0xNS4yIDIwLjctMjIuOSAzNC44LTIyLjkgNC40IDAgNy44IDMuMSAxMC4yIDkuNCAyLjMgNi41IDMuNCAxMy42IDMgMjAuNnoiIGZpbGw9IiMxYTJlM2IiLz48L3N2Zz4=" width="140px" height="60px"  alt="">
+      </a>
+<div>
+    <form name="register" method="post" onsubmit="validateForm()" action="home.html">
+        <p class="login-heading">Log in</p>
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" >
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" ><br>
+        <a class="forget-pass" href="#">Forgot your password?</a>
+        <input type="submit" value="Login in with email">
+        <p class="login-account">Don't have an account? <span><a style="color: #00adef!important; text-decoration: none;" href="#">Join</a></span></p>
+    </form>
+</div>  
+</body>
+</html>
